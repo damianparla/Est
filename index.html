@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Consulta de Películas</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #ff6347;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            color: #d74e09;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        input,
+        select {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff4500;
+        }
+
+        .container {
+            background-image: url('https://img.freepik.com/vector-gratis/fondo-titulo-cine-tira-carrete-pelicula-realista_1017-31192.jpg?w=1060&t=st=1690425233~exp=1690425833~hmac=507e15068e51677302d147facbdcddac282d30dc4d8b09bc8bea7eb139d57c09/800x600');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Consulta de Películas</h1>
+
+        <label for="titulo">Título de la Película:</label>
+        <input type="text" id="titulo" name="titulo" placeholder="Ingrese el título de la película">
+
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero">
+            <option value="accion">Acción</option>
+            <option value="comedia">Comedia</option>
+            <option value="drama">Drama</option>
+            <option value="fantasia">Fantasía</option>
+            <option value="cienciaficcion">Ciencia Ficción</option>
+        </select>
+
+        <label for="idioma">Idioma:</label>
+        <input type="text" id="idioma" name="idioma" placeholder="Ingrese el idioma de la película">
+
+        <label for="publico">Público (Adulto/Niño):</label>
+        <select id="publico" name="publico">
+            <option value="adulto">Adulto</option>
+            <option value="nino">Niño</option>
+        </select>
+
+        <button type="button">Buscar</button>
+    </div>
+</body>
+
+</html>
